@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Optionally disallow certain routes you don't want crawled:
+# Disallow: /api/
+# Disallow: /private/
+
+Sitemap: https://www.niravana.in/sitemap.xml

@@ -40,7 +40,7 @@ const Footer = () => {
                         <ul>
                             <li className="flex gap-x-[15px] mb-[10px]">
                                 <Image width={17} height={25} src="/assets/icons/phone.svg" alt="phone icon" />
-                                <a className="hover:text-white transition-all" href="tel:+91919879879879row justify-between gap-y-10">+91 9879879879</a>
+                                <a className="hover:text-white transition-all" href="tel:+91917993598294row justify-between gap-y-10">+91 7993598294</a>
                             </li>
                             <li className="flex gap-x-[15px]">
                                 <Image width={17} height={25} src="/assets/icons/mail.svg" alt="mail icon" />

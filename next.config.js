@@ -6,7 +6,13 @@ const nextConfig = {
                 protocol: 'https',
                 hostname: 'placehold.co',
                 port: '',
-            }
+            },
+            {
+                protocol: 'https',
+                hostname: 'vectorlogo.zone',
+                port: '',
+            },
+            
         ],
     },
     webpack: (config) => {
@@ -14,9 +20,8 @@ const nextConfig = {
             test: /\.html$/,
             loader: 'html-loader',
         });
-        return config
+        return config;
     },
+};
 
-}
-
-module.exports = nextConfig
+module.exports = nextConfig;

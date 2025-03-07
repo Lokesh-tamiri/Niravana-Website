@@ -9,21 +9,22 @@ const HomeFeatures = () => {
 
     const featuresData = [
         {
-            icon: "https://placehold.co/70/png",
+            icon: "/assets/icons/user-centric.png", 
             title: "User-Centric Design",
             description: "Deliver an exceptional user experience (UX) with our intuitive and aesthetically pleasing user interface (UI) design."
         },
         {
-            icon: "https://placehold.co/70/png",
+            icon: "/assets/icons/secure-web.svg",
             title: "Secure Web Hosting",
             description: "Keep your website safe and sound with our reliable and secure hosting services. We ensure your site runs smoothly with minimal downtime."
-        },
+        }, 
         {
-            icon: "https://placehold.co/70/png",
+            icon: "/assets/icons/cms.svg",
             title: "CMS",
             description: "Take control of your website effortlessly with our user-friendly CMS solutions. Update, edit, and manage your content efficiently."
         }
     ]
+    
 
     return (
         <section className="relative">

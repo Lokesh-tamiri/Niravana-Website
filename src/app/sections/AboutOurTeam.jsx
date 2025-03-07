@@ -11,7 +11,7 @@ const TeamData = [
   {
     img: "/assets/img/lokeshprofile.png",
     name: "Lokesh T.",
-    designation: "Founder & MERN",
+    designation: "Founder & CEO",
   },
   {
     img: "/assets/img/omkarprofile.png",

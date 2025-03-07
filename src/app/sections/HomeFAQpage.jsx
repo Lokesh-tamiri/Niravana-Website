@@ -15,7 +15,7 @@ const accordionData = [
   },
   {
     title: "What platforms and technologies do you use for web development?",
-    description: "We are proficient in various web development platforms and technologies, including but not limited to HTML, CSS, JavaScript, PHP, and popular content management systems like WordPress and Drupal. Our versatility enables us to select the most suitable technology stack for your specific project requirements."
+    description: "We are proficient in various web development platforms and technologies, including but not limited to HTML, CSS, JavaScript. Our versatility enables us to select the most suitable technology stack for your specific project requirements."
   },
   {
     title: "How do you optimize websites for mobile devices?",

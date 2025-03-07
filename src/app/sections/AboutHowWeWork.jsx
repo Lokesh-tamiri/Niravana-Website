@@ -15,15 +15,15 @@ const AboutHowWeWork = () => {
     const stickyData = [
         {
             title: "01. Project research",
-            content: "Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt"
+            content: "We begin every project with a deep-dive into market and user insights. Our team conducts comprehensive research, including competitive analysis, customer surveys, and trend studies. This phase is designed to identify key opportunities, understand target demographics, and gather data on industry benchmarks. By mapping out the user journey and pinpointing client pain points, we lay a strategic foundation that informs both the design and functionality of the final product."
         },
         {
             title: "02. Sketches and design",
-            content: "Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt"
+            content: "In the sketches and design phase, creativity meets strategy. Our designers translate research insights into a range of wireframes and initial mockups. We explore various layouts, typography, and color schemes, merging traditional aesthetics with modern, futuristic elements. Using digital tools like Figma and Photoshop, we refine these sketches into high-fidelity prototypes. This iterative process, combined with regular client feedback, ensures that every design detail not only looks great but also enhances usability and brand messaging."
         },
         {
             title: "03. Seleted concept",
-            content: "Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt Lorem ipsum amet consectetur do eiusmod tempor incididunt"
+            content: "After evaluating multiple design options, we present a selected concept that best aligns with the brand identity and project objectives. This final design is a synthesis of user-centric research and innovative design practices. It features a minimalist yet dynamic aesthetic, optimized for both web and mobile platforms. The chosen concept integrates responsive elements, a clear visual hierarchy, and scalable design components—ensuring that the brand remains modern, engaging, and adaptable to future growth."
         }
     ]
 

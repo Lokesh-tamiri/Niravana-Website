@@ -25,7 +25,7 @@ const Header = () => {
         <header className={`py-[15px] fixed top-0 z-10 w-full`}>
             <div className="container relative">
                 <nav ref={headerNav} className={`flex justify-between items-center transition-all ease-in-out duration-[500ms]`}>
-                    <Logo width={160} height={160} />
+                    <Logo width={50} height={50} />
                     <Toggler className="hidden sm:flex" onChange={(val) => setToggle(val)} />
                     <ul
                         className={`flex gap-x-6 sm:absolute sm:top-[115%] sm:left-[15px] sm:bg-darkgray sm:p-[25px] sm:w-[calc(100%-30px)] sm:rounded-[15px] sm:flex-col sm:gap-y-4 overflow-hidden transition-all duration-500${toggle ? " sm:[clip-path:polygon(0_0,100%_0,100%_100%,0_100%)]" : " sm:[clip-path:polygon(0_0,100%_0,100%_0,0_0)]"}`}

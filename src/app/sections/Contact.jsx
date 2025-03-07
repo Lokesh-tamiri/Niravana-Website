@@ -181,7 +181,7 @@ const Contact = () => {
                             <Image className="mr-[25px] mt-[5px]" width={35} height={35} src="/assets/icons/mail.svg" alt="Mail icon" />
                             <div>
                                 <h3 className="heading-4 text-white font-semibold mb-[10px]">Mail</h3>
-                                <a href={`mailto:${process.env.NEXT_PUBLIC_MAIL_ID || "info@Niravanasolutions.com"}`} className="heading-6">{process.env.NEXT_PUBLIC_MAIL_ID || "info@Niravanasolutions.com"}</a>
+                                <a href={`mailto:${process.env.NEXT_PUBLIC_MAIL_ID || "operations@niravana.in"}`} className="heading-6">{process.env.NEXT_PUBLIC_MAIL_ID || "operations@niravana.in"}</a>
                             </div>
                         </div>
                         {/* <div className="flex items-start mb-[90px]">
@@ -190,7 +190,7 @@ const Contact = () => {
                             </svg>
                             <div>
                                 <h3 className="heading-4 text-white font-semibold mb-[10px]">Skype</h3>
-                                <a href={`mailto:${process.env.NEXT_PUBLIC_MAIL_ID || "info@Niravanasolutions.com"}`} className="heading-6">{process.env.NEXT_PUBLIC_MAIL_ID || "info@Niravanasolutions.com"}</a>
+                                <a href={`mailto:${process.env.NEXT_PUBLIC_MAIL_ID || "operations@niravana.in"}`} className="heading-6">{process.env.NEXT_PUBLIC_MAIL_ID || "operations@niravana.in"}</a>
                             </div>
                         </div> */}
                         <div className="flex items-start">
@@ -200,7 +200,8 @@ const Contact = () => {
                                 <ul className="flex items-center gap-x-[25px]">
                                     {/* <li><a href="#" className="hover:opacity-50 transition-all"><Image width={17} height={17} src="/assets/icons/facebook.svg" alt="facebook icon" /></a></li> */}
                                     {/* <li><a href={process.env.NEXT_PUBLIC_TWITTER_ID || "#" || "#"} target="_blank" className="hover:opacity-50 transition-all"><Image width={24} height={24} src="/assets/icons/twitter.svg" alt="twitter icon" /></a></li> */}
-                                    <li><a href={process.env.NEXT_PUBLIC_INSTA_ID || "#" || "#"} target="_blank" className="hover:opacity-50 transition-all"><Image width={24} height={24} src="/assets/icons/instagram.svg" alt="instagram icon" /></a></li>
+                                    <li><a href={process.env.NEXT_PUBLIC_INSTA_ID || "https://www.instagram.com/niravana.in"} target="_blank" rel="noopener noreferrer">
+                                    <Image width={24} height={24} src="/assets/icons/instagram.svg" alt="instagram icon" /></a></li>
                                 </ul>
                             </div>
                         </div>

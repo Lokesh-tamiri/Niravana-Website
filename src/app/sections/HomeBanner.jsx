@@ -22,6 +22,27 @@ const HomeBanner = () => {
                         </div>
                     </div>
                 </div>
+                <div className="absolute text-center z-[1] top-1/2 -translate-y-1/2 left-[15%] xl:left-[10%] lg:hidden">
+                    <MagneticButton buttonClass="bg-[#ffdb1e] mb-[10px] overflow-hidden rounded-[114px]">
+                        <Image width={150} height={225} className="h-[auto]" src="/assets/img/lokeshprofile.png" alt="Lokesh T." />
+                    </MagneticButton>
+                    <h4 className='text-white font-poppins -mb-[5px]'>Lokesh T.</h4>
+                    <span className='font-poppins text-white'>Founder & MERN</span>
+                </div>
+                <div className="absolute text-center z-[1] bottom-[50px] right-[25%] xl:right-[20%] lg:hidden">
+                    <MagneticButton buttonClass="bg-[#6e5aef] mb-[10px] overflow-hidden rounded-full py-[15px] px-[15px]">
+                        <Image width={433} height={577} className="w-[150px] h-[auto] inline-flex" src="/assets/img/omkarprofile.png" alt="Omkar B." />
+                    </MagneticButton>
+                    <h4 className='text-white font-poppins -mb-[5px]'>OMKAR B.</h4>
+                    <span className='font-poppins text-white'>MERN</span>
+                </div>
+                <div className="absolute text-center z-[1] top-[150px] right-[13%] xl:right-[10%] lg:hidden">
+                    <MagneticButton buttonClass="bg-[#ff83af] mb-[10px] overflow-hidden rounded-full py-[15px]">
+                        <Image width={150} height={150} className="inline-flex" src="/assets/img/harikaprofile.png" alt="Harika T." />
+                    </MagneticButton>
+                    <h4 className='text-white font-poppins -mb-[5px]'>Harika T.</h4>
+                    <span className='font-poppins text-white'>Branding and UX</span>
+                </div>
             </section>
         </>
     )

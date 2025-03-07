@@ -9,18 +9,18 @@ import 'swiper/css';
 
 const TeamData = [
   {
-    img: "https://placehold.co/100/png",
-    name: "Yohan A.",
-    designation: "Frontend Developer",
+    img: "/assets/img/lokeshprofile.png",
+    name: "Lokesh T.",
+    designation: "Founder & MERN",
   },
   {
-    img: "https://placehold.co/100/png",
-    name: "Amelia C.",
-    designation: "Web & UI Designer",
+    img: "/assets/img/omkarprofile.png",
+    name: "Omkar B.",
+    designation: "MERN",
   },
   {
-    img: "https://placehold.co/100/png",
-    name: "Nathan T.",
+    img: "/assets/img/harikaprofile.png",
+    name: "Harika T.",
     designation: "Branding & UX",
   },
 ];
@@ -97,9 +97,16 @@ const Team = ({ item }) => {
     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-9 col-12 sm:mx-auto">
       <div className="text-center h-full">
         <div className="relative mb-[25px] bg-darkgray w-full h-full rounded-[25px] flex items-center px-[15px] py-[15px]">
-          <div className="img-wrapper mr-[15px] bg-[#383838] relative rounded-[25px] w-[100px] h-[100px] overflow-hidden">
-            <Image src={item.img} alt={item.name} fill={true} sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw" />
-          </div>
+        <div className="img-wrapper mr-[15px] bg-[#383838] relative rounded-[25px] w-[100px] h-[100px] overflow-hidden">
+    <Image 
+        src={item.img} 
+        alt={item.name} 
+        fill 
+        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        className="object-contain"
+    />
+</div>
+
           <div className="text-left">
             <h3 className="text-[20px] leading-none text-white font-medium">{item.name}</h3>
             <p>{item.designation}</p>

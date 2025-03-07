@@ -15,7 +15,7 @@ const Footer = () => {
                     <div className="col w-full h-[1px] bg-[rgba(255,255,255,0.2)]"></div>
                     <div className="col text-center">
                         <h2 className="text-white font-semibold mb-[30px] md:mb-[15px] sm:mb-[5px]">{`Let's talk`}</h2>
-                        <a href={`mailto:${process.env.NEXT_PUBLIC_MAIL_ID || "info@Niravanasolutions.com"}`} className="heading-6 font-poppins">{process.env.NEXT_PUBLIC_MAIL_ID || "info@Niravanasolutions.com"}</a>
+                        <a href={`mailto:${process.env.NEXT_PUBLIC_MAIL_ID || "operations@niravana.in"}`} className="heading-6 font-poppins">{process.env.NEXT_PUBLIC_MAIL_ID || "operations@niravana.in"}</a>
                     </div >
                     <div className="col w-full h-[1px] bg-[rgba(255,255,255,0.2)]"></div>
                 </div >
@@ -44,16 +44,17 @@ const Footer = () => {
                             </li>
                             <li className="flex gap-x-[15px]">
                                 <Image width={17} height={25} src="/assets/icons/mail.svg" alt="mail icon" />
-                                <a className="hover:text-white transition-all" href={`mailto:${process.env.NEXT_PUBLIC_MAIL_ID || "info@Niravanasolutions.com"}`}>{process.env.NEXT_PUBLIC_MAIL_ID || "info@Niravanasolutions.com"}</a>
+                                <a className="hover:text-white transition-all" href={`mailto:${process.env.NEXT_PUBLIC_MAIL_ID || "operations@niravana.in"}`}>{process.env.NEXT_PUBLIC_MAIL_ID || "operations@niravana.in"}</a>
                             </li >
                         </ul >
                     </div >
                     <div className="col-lg-auto col-md-6">
                         <h3 className="heading-6 text-white font-semibold mb-[30px] sm:mb-[15px]">Follow us on:</h3>
                         <ul className="flex items-center gap-x-[25px]">
-                            <li><a href="#" className="hover:opacity-50 transition-all"><Image width={17} height={29} src="/assets/icons/facebook.svg" alt="facebook icon" /></a></li>
-                            <li><a href={process.env.NEXT_PUBLIC_TWITTER_ID || "#" || "#"} target="_blank" className="hover:opacity-50 transition-all"><Image width={24} height={24} src="/assets/icons/twitter.svg" alt="twitter icon" /></a></li>
-                            <li><a href={process.env.NEXT_PUBLIC_INSTA_ID || "#" || "#"} target="_blank" className="hover:opacity-50 transition-all"><Image width={24} height={24} src="/assets/icons/instagram.svg" alt="instagram icon" /></a></li>
+                            {/* <li><a href="#" className="hover:opacity-50 transition-all"><Image width={17} height={29} src="/assets/icons/facebook.svg" alt="facebook icon" /></a></li> */}
+                            {/* <li><a href={process.env.NEXT_PUBLIC_TWITTER_ID || "#" || "#"} target="_blank" className="hover:opacity-50 transition-all"><Image width={24} height={24} src="/assets/icons/twitter.svg" alt="twitter icon" /></a></li> */}
+                            <li><a href={process.env.NEXT_PUBLIC_INSTA_ID || "https://www.instagram.com/niravana.in"} target="_blank" rel="noopener noreferrer">
+                            <Image width={24} height={24} src="/assets/icons/instagram.svg" alt="instagram icon" /></a></li>
                         </ul>
                     </div>
                 </div >

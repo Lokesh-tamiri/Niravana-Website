@@ -27,11 +27,19 @@ export const gridImageData = [
         path: "https://www.vectorlogo.zone/logos/sass-lang/sass-lang-icon.svg",
         label: "SCSS"
     },
+ 
     {
-        path: "https://www.vectorlogo.zone/logos/lesscss/lesscss-icon.svg",
-        label: "LESS"
+        path: "https://astro.build/assets/press/astro-icon-light.png",
+        label: "Astro"
+    },
+    {
+        path: "https://www.vectorlogo.zone/logos/javascript/javascript-icon.svg",
+        label: "JavaScript"
     }
 ];
+
+
+
 
 export const gridImageBackendData = [
     {
@@ -41,6 +49,14 @@ export const gridImageBackendData = [
     {
         path: "https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg",
         label: "Express.js"
+    },
+    {
+        path: "https://www.vectorlogo.zone/logos/python/python-icon.svg",
+        label: "Python"
+    },
+    {
+        path: "https://www.vectorlogo.zone/logos/nestjs/nestjs-icon.svg",
+        label: "Nest.js"
     }
 ];
 
@@ -49,7 +65,6 @@ export const gridImageCMSData = [
         path: "https://www.vectorlogo.zone/logos/wordpress/wordpress-icon.svg",
         label: "WordPress"
     },
-  
 ];
 
 export const gridImageDatabaseData = [
@@ -64,5 +79,14 @@ export const gridImageDatabaseData = [
     {
         path: "https://www.vectorlogo.zone/logos/mysql/mysql-icon.svg",
         label: "MySQL"
+    },
+    {
+        path: "https://www.sanity.io/static/images/logo_rounded_square.png",
+        label: "Sanity"
+    },
+    {
+        path: "https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg",
+        label: "PostgreSQL"
     }
 ];
+

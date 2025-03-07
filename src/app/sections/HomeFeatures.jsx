@@ -9,7 +9,7 @@ const HomeFeatures = () => {
 
     const featuresData = [
         {
-            icon: "/public/assets/icons/user-centric1.svg", 
+            icon: "/assets/icons/usercentric.svg", 
             title: "User-Centric Design",
             description: "Deliver an exceptional user experience (UX) with our intuitive and aesthetically pleasing user interface (UI) design."
         },

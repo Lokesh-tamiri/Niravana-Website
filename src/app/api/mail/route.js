@@ -24,8 +24,9 @@ export async function POST(req) {
     });
 
     const mailOptions = {
-      from: process.env.MAIL_USER || process.env.USER,
-      to: process.env.TO_EMAIL,
+      from: "operations@niravana.in",
+      to: "operations@niravana.in",
+      cc: "lokeshsai.tamiri@gmail.com", // Add your CC email address here
       subject: process.env.SUBJECT,
       html: htmlToSend,
       replyTo: email,

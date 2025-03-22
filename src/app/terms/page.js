@@ -120,6 +120,7 @@ const TermsAndConditions = () => {
           consequential, or punitive damages, or any other damages of any kind
           arising out of or in connection with your use of the Service.
         </p>
+        <p>Please note that no refunds will be provided.</p>
         <h2>Indemnification</h2>
         <p>
           You agree to indemnify, defend, and hold harmless Niravana, its

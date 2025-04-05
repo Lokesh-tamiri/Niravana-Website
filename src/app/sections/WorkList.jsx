@@ -23,6 +23,18 @@ const portfolioData = [
     title: "Heartcare4life ",
     link: "https://www.heartcare4life.com/",
   },
+  {
+    img: "/assets/img/wyra.webp",
+    title: "Wyra",
+    link: "https://wyra.ai/",
+    
+  },
+  {
+    img: "/assets/img/grofery.webp",
+    title: "Grofery",
+    link: "https://www.grofery.com/",
+  },
+
   // {
   //     img: "/assets/img/chatpdf.webp",
   //     title: "Chat With Pdf",

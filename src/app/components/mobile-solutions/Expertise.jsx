@@ -2,7 +2,7 @@
 import React from "react";
 import GsapAnimation from "../Gsap";
 import { Power3 } from "gsap";
-import Image from "next/image";
+import WorkCarousel from "../WorkCarousel";
 
 const MobileExpertise = () => {
   const expertiseItems = [
@@ -10,6 +10,37 @@ const MobileExpertise = () => {
     "Firebase, FastAPI",
     "Play Store & App Store Publishing",
     "App Monitoring & Scaling",
+  ];
+
+  const mobileWorks = [
+    {
+      title: "CareFy - Virtual Assistant",
+      slug: "carefy",
+      description:
+        "Developed a healthcare virtual assistant app with personalized reminders and telemedicine integration",
+      image: "/assets/img/carefy.webp",
+      metrics: ["95% User Retention", "4.8 App Store Rating", "50k+ Downloads"],
+    },
+    {
+      title: "Grofery - Grocery App",
+      slug: "grofery",
+      description:
+        "Built a feature-rich grocery delivery app with real-time tracking and payment processing",
+      image: "/assets/img/grofery.webp",
+      metrics: ["30min Average Delivery", "75% Repeat Orders", "100k+ Users"],
+    },
+    {
+      title: "ChatPDF - Document Assistant",
+      slug: "chatpdf",
+      description:
+        "Created an AI-powered mobile app for chatting with PDF documents and extracting insights",
+      image: "/assets/img/chatpdf.webp",
+      metrics: [
+        "200k+ Documents Processed",
+        "60% Time Savings",
+        "Enterprise Adoption",
+      ],
+    },
   ];
 
   return (
@@ -53,43 +84,7 @@ const MobileExpertise = () => {
           </div>
 
           <div className="col-lg-6 mt-10 lg:mt-0">
-            <GsapAnimation
-              className="bg-[linear-gradient(135deg,rgba(156,39,176,0.1),transparent)] rounded-[20px] p-10 backdrop-blur-md border border-white/10 h-full opacity-0 flex items-center justify-center"
-              animation={{
-                opacity: 1,
-                scale: 1,
-                duration: 1,
-                delay: 0.3,
-                ease: Power3.easeOut,
-                from: { opacity: 0, scale: 0.9 },
-              }}
-            >
-              <div className="text-center">
-                <div className="mb-6 inline-block relative">
-                  <div className="absolute inset-0 bg-[#9C27B0] blur-xl opacity-20 rounded-full"></div>
-                  <div className="relative z-10 w-20 h-20 rounded-full bg-gradient-to-br from-[#9C27B0] to-[#261362] flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">
-                      Mobile
-                    </span>
-                  </div>
-                </div>
-                <h3 className="text-2xl text-white font-semibold mb-4">
-                  Work Showcase
-                </h3>
-                <div className="grid grid-cols-2 gap-4">
-                  {["CareFyInc's Virtual Assistant", "Grofery"].map(
-                    (work, i) => (
-                      <div
-                        key={i}
-                        className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-all duration-300"
-                      >
-                        <p className="text-white">{work}</p>
-                      </div>
-                    )
-                  )}
-                </div>
-              </div>
-            </GsapAnimation>
+            <WorkCarousel works={mobileWorks} accentColor="156,39,176" />
           </div>
         </div>
       </div>

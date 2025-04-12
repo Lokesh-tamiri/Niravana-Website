@@ -18,7 +18,7 @@ const WebExpertise = () => {
       slug: "wyra",
       description:
         "Redesigned Wyra's frontend with a modern UI and optimized API connectivity for faster data retrieval",
-      image: "/assets/img/works/wyra.jpg",
+      image: "/assets/img/wyra.webp",
       metrics: [
         "60% Faster Load Time",
         "45% Conversion Increase",
@@ -30,7 +30,7 @@ const WebExpertise = () => {
       slug: "axisb",
       description:
         "Built a responsive, SEO-optimized corporate website with interactive elements and integrated CMS",
-      image: "/assets/img/works/axisb.jpg",
+      image: "/assets/img/axisb.webp",
       metrics: [
         "Top 3 SERP Rankings",
         "85% Mobile Traffic",
@@ -42,7 +42,7 @@ const WebExpertise = () => {
       slug: "heartcare4life",
       description:
         "Created a medical appointment system with secure patient portal and integrated payment gateway",
-      image: "/assets/img/works/heartcare4life.jpg",
+      image: "/assets/img/heartcare4life.webp",
       metrics: ["99.9% Uptime", "15k+ Monthly Bookings", "HIPAA Compliant"],
     },
   ];

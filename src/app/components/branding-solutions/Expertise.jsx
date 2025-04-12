@@ -2,6 +2,7 @@
 import React from "react";
 import GsapAnimation from "../Gsap";
 import { Power3 } from "gsap";
+import WorkCarousel from "../WorkCarousel";
 
 const BrandingExpertise = () => {
   const expertiseItems = [
@@ -9,6 +10,45 @@ const BrandingExpertise = () => {
     "Webflow, Canva",
     "Tailwind UI Customization",
     "Conversion-Oriented Design",
+  ];
+
+  const brandingWorks = [
+    {
+      title: "Niravana Identity",
+      slug: "niravana",
+      description:
+        "Created a memorable brand identity with logo design, style guide, and comprehensive visual language",
+      image: "/assets/img/Niravana.svg",
+      metrics: [
+        "Brand Recognition +65%",
+        "Cohesive Digital Presence",
+        "Modern Design System",
+      ],
+    },
+    {
+      title: "Eficens Systems",
+      slug: "eficens",
+      description:
+        "Rebranded a tech company with a fresh identity that reflects its innovative approach and values",
+      image: "/assets/img/eficens.webp",
+      metrics: [
+        "Market Perception Improved",
+        "45% Engagement Increase",
+        "Brand Loyalty Growth",
+      ],
+    },
+    {
+      title: "FoxyBiz Portal",
+      slug: "foxybiz",
+      description:
+        "Designed a standout brand identity for a financial services platform focusing on trust and simplicity",
+      image: "/assets/img/foxybiz.svg",
+      metrics: [
+        "78% Brand Recall",
+        "UX Satisfaction 4.7/5",
+        "Consistent Cross-platform Experience",
+      ],
+    },
   ];
 
   return (
@@ -52,43 +92,7 @@ const BrandingExpertise = () => {
           </div>
 
           <div className="col-lg-6 mt-10 lg:mt-0">
-            <GsapAnimation
-              className="bg-[linear-gradient(135deg,rgba(255,87,34,0.1),transparent)] rounded-[20px] p-10 backdrop-blur-md border border-white/10 h-full opacity-0 flex items-center justify-center"
-              animation={{
-                opacity: 1,
-                scale: 1,
-                duration: 1,
-                delay: 0.3,
-                ease: Power3.easeOut,
-                from: { opacity: 0, scale: 0.9 },
-              }}
-            >
-              <div className="text-center">
-                <div className="mb-6 inline-block relative">
-                  <div className="absolute inset-0 bg-[#FF5722] blur-xl opacity-20 rounded-full"></div>
-                  <div className="relative z-10 w-20 h-20 rounded-full bg-gradient-to-br from-[#FF5722] to-[#261362] flex items-center justify-center">
-                    <span className="text-2xl font-bold text-white">Brand</span>
-                  </div>
-                </div>
-                <h3 className="text-2xl text-white font-semibold mb-4">
-                  Work Showcase
-                </h3>
-                <div className="grid grid-cols-3 gap-4">
-                  {[
-                    "Niravana Identity",
-                    "Eficiens Systems",
-                    "Harika UX Branding",
-                  ].map((work, i) => (
-                    <div
-                      key={i}
-                      className="bg-white/5 backdrop-blur-sm border border-white/10 rounded-lg p-4 hover:bg-white/10 transition-all duration-300"
-                    >
-                      <p className="text-white">{work}</p>
-                    </div>
-                  ))}
-                </div>
-              </div>
-            </GsapAnimation>
+            <WorkCarousel works={brandingWorks} accentColor="255,87,34" />
           </div>
         </div>
       </div>

@@ -38,15 +38,39 @@ const BrandingExpertise = () => {
       ],
     },
     {
-      title: "FoxyBiz Portal",
-      slug: "foxybiz",
+      title: "AxisB - Corporate Branding",
+      slug: "axisb",
       description:
-        "Designed a standout brand identity for a financial services platform focusing on trust and simplicity",
-      image: "/assets/img/foxybiz.svg",
+        "Developed a comprehensive brand identity system for a financial corporation with distinctive visual elements",
+      image: "/assets/img/axisb.webp",
       metrics: [
-        "78% Brand Recall",
-        "UX Satisfaction 4.7/5",
-        "Consistent Cross-platform Experience",
+        "Brand Recognition +70%",
+        "Increased Client Trust",
+        "Consistent Digital Experience",
+      ],
+    },
+    {
+      title: "CareFy - Healthcare Brand",
+      slug: "carefy",
+      description:
+        "Created a trustworthy and caring brand identity for a healthcare mobile application focusing on user wellbeing",
+      image: "/assets/img/carefy.webp",
+      metrics: [
+        "User Engagement +55%",
+        "Industry Recognition",
+        "Patient Trust Improved",
+      ],
+    },
+    {
+      title: "HeartCare4life - Medical Brand",
+      slug: "heartcare4life",
+      description:
+        "Designed a professional and approachable brand identity for a cardiac care center with custom illustrations",
+      image: "/assets/img/heartcare4life.webp",
+      metrics: [
+        "Patient Acquisition +40%",
+        "Brand Consistency Across Channels",
+        "Increased Referrals",
       ],
     },
   ];

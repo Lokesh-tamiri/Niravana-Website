@@ -14,35 +14,39 @@ const AIExpertise = () => {
 
   const aiWorks = [
     {
-      title: "CopyGenius - AI Writer",
-      slug: "copygenius",
+      title: "Wyra - B2B AI Platform",
+      slug: "wyra",
       description:
-        "Built a custom GPT-powered content generation platform with fine-tuned models for specific industry verticals",
-      image: "/assets/img/works/copygenius.jpg",
-      metrics: ["85% Time Savings", "53% Conversion Rate", "20K+ Active Users"],
-    },
-    {
-      title: "VisionX - Image Analysis",
-      slug: "visionx",
-      description:
-        "Developed an AI-based visual inspection system that can detect product defects with high accuracy",
-      image: "/assets/img/works/visionx.jpg",
+        "Implemented intelligent automation and AI-driven recommendations for a B2B data analysis platform",
+      image: "/assets/img/wyra.webp",
       metrics: [
-        "99.2% Detection Rate",
-        "70% Cost Reduction",
-        "Real-time Processing",
+        "65% Faster Insights Generation",
+        "45% Increase in User Retention",
+        "Custom AI Algorithms",
       ],
     },
     {
-      title: "DataSense - AI Analytics",
-      slug: "datasense",
+      title: "Escapery - Smart Tourism",
+      slug: "escapery",
       description:
-        "Created an intelligent data analytics platform that predicts business trends and provides actionable insights",
-      image: "/assets/img/works/datasense.jpg",
+        "Developed an AI-powered travel recommendation engine with personalized itinerary creation and smart notifications",
+      image: "/assets/img/escapery.png",
       metrics: [
-        "92% Prediction Accuracy",
-        "3x Faster Analysis",
-        "Multi-source Integration",
+        "90% Recommendation Accuracy",
+        "3.5x Booking Conversion",
+        "Real-time Destination Insights",
+      ],
+    },
+    {
+      title: "ChatPDF - Document AI",
+      slug: "chatpdf",
+      description:
+        "Built an intelligent document analysis system that extracts insights and answers questions from any PDF document",
+      image: "/assets/img/chatpdf.webp",
+      metrics: [
+        "95% Information Accuracy",
+        "75% Time Savings",
+        "Multi-language Support",
       ],
     },
   ];

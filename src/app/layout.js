@@ -24,6 +24,10 @@ export const metadata = {
     default: "Niravana Web Innovation", // a default is required when creating a template
   },
   description: "Innovative web design and development agency",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({ children }) {
@@ -31,6 +35,7 @@ export default function RootLayout({ children }) {
     <>
       <html lang="en">
         <head>
+          <link rel="icon" href="/favicon.png" sizes="32x32" />
           <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-CCPBR741MP"

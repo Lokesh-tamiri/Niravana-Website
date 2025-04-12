@@ -22,7 +22,7 @@ const WebCTA = () => {
               <div className="absolute top-[-50px] left-1/2 transform -translate-x-1/2 w-20 h-1 bg-white/30"></div>
 
               <h2 className="heading-3 font-poppins text-white font-semibold mb-[15px]">
-                Let's build your web success story
+                Let&apos;s build your web success story
               </h2>
 
               <p className="mb-[35px] text-white/80 max-w-2xl mx-auto">

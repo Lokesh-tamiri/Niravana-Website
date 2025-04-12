@@ -1,4 +1,5 @@
 import { Poppins, Nunito_Sans } from "next/font/google";
+import Script from "next/script";
 
 // Styles
 import "./globals.scss";
@@ -36,22 +37,20 @@ export default function RootLayout({ children }) {
       <html lang="en">
         <head>
           <link rel="icon" href="/favicon.png" sizes="32x32" />
-          <script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-CCPBR741MP"
-          ></script>
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-                window.dataLayer = window.dataLayer || [];
-                function gtag(){dataLayer.push(arguments);}
-                gtag('js', new Date());
-                gtag('config', 'G-CCPBR741MP');
-              `,
-            }}
-          />
         </head>
         <body className={`${poppins.variable} ${nunito_sans.variable}`}>
+          <Script
+            src="https://www.googletagmanager.com/gtag/js?id=G-CCPBR741MP"
+            strategy="afterInteractive"
+          />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-CCPBR741MP');
+            `}
+          </Script>
           <Header />
           {children}
           <Footer />

@@ -19,6 +19,7 @@ const BrandingExpertise = () => {
       description:
         "Rebranded a tech company with a fresh identity that reflects its innovative approach and values",
       image: "/assets/img/eficens.webp",
+      url: "https://eficens.ai/",
       metrics: [
         "Market Perception Improved",
         "45% Engagement Increase",
@@ -31,6 +32,7 @@ const BrandingExpertise = () => {
       description:
         "Developed a comprehensive brand identity system for a financial corporation with distinctive visual elements",
       image: "/assets/img/axisb.webp",
+      url: "https://www.axisbinc.com/",
       metrics: [
         "Brand Recognition +70%",
         "Increased Client Trust",
@@ -43,6 +45,7 @@ const BrandingExpertise = () => {
       description:
         "Created a trustworthy and caring brand identity for a healthcare mobile application focusing on user wellbeing",
       image: "/assets/img/carefy.webp",
+      url: "https://carefyinc.com/",
       metrics: [
         "User Engagement +55%",
         "Industry Recognition",
@@ -55,6 +58,7 @@ const BrandingExpertise = () => {
       description:
         "Designed a professional and approachable brand identity for a cardiac care center with custom illustrations",
       image: "/assets/img/heartcare4life.webp",
+      url: "https://heartcare4life.com/",
       metrics: [
         "Patient Acquisition +40%",
         "Brand Consistency Across Channels",

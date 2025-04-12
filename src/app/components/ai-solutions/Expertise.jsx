@@ -19,6 +19,7 @@ const AIExpertise = () => {
       description:
         "Implemented intelligent automation and AI-driven recommendations for a B2B data analysis platform",
       image: "/assets/img/wyra.webp",
+      url: "https://wyra.ai/",
       metrics: [
         "65% Faster Insights Generation",
         "45% Increase in User Retention",
@@ -31,24 +32,26 @@ const AIExpertise = () => {
       description:
         "Developed an AI-powered travel recommendation engine with personalized itinerary creation and smart notifications",
       image: "/assets/img/escapery.png",
+      url: "https://escapery.niravana.in/", 
       metrics: [
         "90% Recommendation Accuracy",
         "3.5x Booking Conversion",
         "Real-time Destination Insights",
       ],
     },
-    {
-      title: "ChatPDF - Document AI",
-      slug: "chatpdf",
-      description:
-        "Built an intelligent document analysis system that extracts insights and answers questions from any PDF document",
-      image: "/assets/img/chatpdf.webp",
-      metrics: [
-        "95% Information Accuracy",
-        "75% Time Savings",
-        "Multi-language Support",
-      ],
-    },
+    // {
+    //   title: "ChatPDF - Document AI",
+    //   slug: "chatpdf",
+    //   description:
+    //     "Built an intelligent document analysis system that extracts insights and answers questions from any PDF document",
+    //   image: "/assets/img/chatpdf.webp",
+    //   url: "https://chatpdf.com/",
+    //   metrics: [
+    //     "95% Information Accuracy",
+    //     "75% Time Savings",
+    //     "Multi-language Support",
+    //   ],
+    // },
   ];
 
   return (

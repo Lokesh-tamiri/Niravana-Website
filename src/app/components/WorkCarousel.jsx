@@ -1,6 +1,7 @@
 "use client";
 import React, { useState, useEffect, useRef } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import GsapAnimation from "./Gsap";
 import { Power3 } from "gsap";
 
@@ -54,7 +55,12 @@ const WorkCarousel = ({ works, accentColor }) => {
 
       <div className="relative">
         <div className="overflow-hidden rounded-lg mb-6">
-          <div className="relative aspect-[16/9] w-full">
+          <Link 
+            href={works[activeIndex].url || "#"} 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="block relative aspect-[16/9] w-full cursor-pointer transform transition-transform duration-300 hover:scale-105"
+          >
             <Image
               src={works[activeIndex].image}
               alt={works[activeIndex].title}
@@ -62,7 +68,7 @@ const WorkCarousel = ({ works, accentColor }) => {
               className="object-cover transition-all duration-500"
               priority
             />
-          </div>
+          </Link>
         </div>
 
         <div className="text-left mb-4">

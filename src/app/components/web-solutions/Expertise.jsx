@@ -19,6 +19,7 @@ const WebExpertise = () => {
       description:
         "Redesigned Wyra's frontend with a modern UI and optimized API connectivity for faster data retrieval",
       image: "/assets/img/wyra.webp",
+      url: "https://wyra.ai/",
       metrics: [
         "60% Faster Load Time",
         "45% Conversion Increase",
@@ -31,6 +32,7 @@ const WebExpertise = () => {
       description:
         "Built a responsive, SEO-optimized corporate website with interactive elements and integrated CMS",
       image: "/assets/img/axisb.webp",
+      url: "https://www.axisbinc.com/",
       metrics: [
         "Top 3 SERP Rankings",
         "85% Mobile Traffic",
@@ -43,6 +45,7 @@ const WebExpertise = () => {
       description:
         "Created a medical appointment system with secure patient portal and integrated payment gateway",
       image: "/assets/img/heartcare4life.webp",
+      url: "https://heartcare4life.com/",
       metrics: ["99.9% Uptime", "15k+ Monthly Bookings", "HIPAA Compliant"],
     },
   ];

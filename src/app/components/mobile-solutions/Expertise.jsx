@@ -19,6 +19,7 @@ const MobileExpertise = () => {
       description:
         "Developed a healthcare virtual assistant app with personalized reminders and telemedicine integration",
       image: "/assets/img/carefy.webp",
+      url: "https://carefyinc.com/",
       metrics: ["95% User Retention", "4.8 App Store Rating", "50k+ Downloads"],
     },
     {
@@ -27,20 +28,22 @@ const MobileExpertise = () => {
       description:
         "Built a feature-rich grocery delivery app with real-time tracking and payment processing",
       image: "/assets/img/grofery.webp",
+      url: "https://grofery.com/",
       metrics: ["30min Average Delivery", "75% Repeat Orders", "100k+ Users"],
     },
-    {
-      title: "ChatPDF - Document Assistant",
-      slug: "chatpdf",
-      description:
-        "Created an AI-powered mobile app for chatting with PDF documents and extracting insights",
-      image: "/assets/img/chatpdf.webp",
-      metrics: [
-        "200k+ Documents Processed",
-        "60% Time Savings",
-        "Enterprise Adoption",
-      ],
-    },
+    // {
+    //   title: "ChatPDF - Document Assistant",
+    //   slug: "chatpdf",
+    //   description:
+    //     "Created an AI-powered mobile app for chatting with PDF documents and extracting insights",
+    //   image: "/assets/img/chatpdf.webp",
+    //   url: "https://chatpdf.com/",
+    //   metrics: [
+    //     "200k+ Documents Processed",
+    //     "60% Time Savings",
+    //     "Enterprise Adoption",
+    //   ],
+    // },
   ];
 
   return (

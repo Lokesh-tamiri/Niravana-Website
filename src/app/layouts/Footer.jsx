@@ -81,14 +81,14 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link
+                {/* <Link
                   href="/work"
                   className={`font-medium hover:text-white leading-[30px] transition-all${
                     pathname === "/work" ? " active text-white" : ""
                   }`}
                 >
                   Work
-                </Link>
+                </Link> */}
               </li>
             </ul>
           </div>

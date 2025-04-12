@@ -153,6 +153,20 @@ const Footer = () => {
                   />
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/company/106395878/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <Image
+                    width={24}
+                    height={24}
+                    src="/assets/icons/linkedin.svg"
+                    alt="linkedin icon"
+                  />
+                </a>
+              </li>
             </ul>
           </div>
         </div>

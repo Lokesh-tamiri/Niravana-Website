@@ -1,19 +1,17 @@
 "use client";
 import React from "react";
-
-
-import HomeFeatures from "../sections/HomeFeatures";
-import OurExpertise from "../sections/OurExpertise";
-import HomeBanners from "../components/web-innovations/Home";
+import AISolutionsBanner from "../components/ai-solutions/Banner";
+import AICapabilities from "../components/ai-solutions/Capabilities";
+import AIExpertise from "../components/ai-solutions/Expertise";
+import AICTA from "../components/ai-solutions/CTA";
 
 export default function Page() {
   return (
     <>
-      <HomeBanners />
-      <HomeFeatures />
-      <OurExpertise />
-      {/* <HomeFAQpage />
-      <HomeContact /> */}
+      <AISolutionsBanner />
+      <AICapabilities />
+      <AIExpertise />
+      <AICTA />
     </>
-  )
+  );
 }

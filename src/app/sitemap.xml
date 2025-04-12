@@ -31,4 +31,52 @@
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
+
+  <!-- Web Innovations Page -->
+  <url>
+    <loc>https://www.niravana.in/web-innovations</loc>
+    <lastmod>2025-03-06T15:02:24.021Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Mobile Innovations Page -->
+  <url>
+    <loc>https://www.niravana.in/mobile-innovations</loc>
+    <lastmod>2025-03-06T15:02:24.021Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- AI Innovations Page -->
+  <url>
+    <loc>https://www.niravana.in/ai-innovations</loc>
+    <lastmod>2025-03-06T15:02:24.021Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Privacy Policy Page -->
+  <url>
+    <loc>https://www.niravana.in/privacy</loc>
+    <lastmod>2025-03-06T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Terms and Conditions Page -->
+  <url>
+    <loc>https://www.niravana.in/terms</loc>
+    <lastmod>2025-03-06T15:02:24.021Z</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- Branding Innovations Page -->
+  <url>
+    <loc>https://www.niravana.in/branding-innovations</loc>
+    <lastmod>2025-03-06T15:02:24.021Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
 </urlset>

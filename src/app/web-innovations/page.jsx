@@ -1,19 +1,17 @@
 "use client";
 import React from "react";
-
-
-import HomeFeatures from "../sections/HomeFeatures";
-import OurExpertise from "../sections/OurExpertise";
-import HomeBanners from "../components/web-innovations/Home";
+import WebSolutionsBanner from "../components/web-solutions/Banner";
+import WebCapabilities from "../components/web-solutions/Capabilities";
+import WebExpertise from "../components/web-solutions/Expertise";
+import WebCTA from "../components/web-solutions/CTA";
 
 export default function Page() {
   return (
     <>
-      <HomeBanners />
-      <HomeFeatures />
-      <OurExpertise />
-      {/* <HomeFAQpage />
-      <HomeContact /> */}
+      <WebSolutionsBanner />
+      <WebCapabilities />
+      <WebExpertise />
+      <WebCTA />
     </>
-  )
+  );
 }

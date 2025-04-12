@@ -1,19 +1,17 @@
 "use client";
 import React from "react";
-
-
-import HomeFeatures from "../sections/HomeFeatures";
-import OurExpertise from "../sections/OurExpertise";
-import HomeBanners from "../components/web-innovations/Home";
+import MobileSolutionsBanner from "../components/mobile-solutions/Banner";
+import MobileCapabilities from "../components/mobile-solutions/Capabilities";
+import MobileExpertise from "../components/mobile-solutions/Expertise";
+import MobileCTA from "../components/mobile-solutions/CTA";
 
 export default function Page() {
   return (
     <>
-      <HomeBanners />
-      <HomeFeatures />
-      <OurExpertise />
-      {/* <HomeFAQpage />
-      <HomeContact /> */}
+      <MobileSolutionsBanner />
+      <MobileCapabilities />
+      <MobileExpertise />
+      <MobileCTA />
     </>
-  )
+  );
 }

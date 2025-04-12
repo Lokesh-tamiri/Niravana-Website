@@ -14,18 +14,6 @@ const BrandingExpertise = () => {
 
   const brandingWorks = [
     {
-      title: "Niravana Identity",
-      slug: "niravana",
-      description:
-        "Created a memorable brand identity with logo design, style guide, and comprehensive visual language",
-      image: "/assets/img/Niravana.svg",
-      metrics: [
-        "Brand Recognition +65%",
-        "Cohesive Digital Presence",
-        "Modern Design System",
-      ],
-    },
-    {
       title: "Eficens Systems",
       slug: "eficens",
       description:

@@ -5,14 +5,13 @@ import Logo from "../components/Logo";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import useWindowScroll from "@react-hook/window-scroll";
-import Toggler from "../components/Toggler";
 
 const Header = () => {
   const headerNav = useRef(null);
   const pathname = usePathname();
   const router = useRouter();
   const scrollY = useWindowScroll();
-  const [toggle, setToggle] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [workDropdownOpen, setWorkDropdownOpen] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [transitionPage, setTransitionPage] = useState(null);
@@ -21,6 +20,7 @@ const Header = () => {
   // Close dropdown on route change
   useEffect(() => {
     setWorkDropdownOpen(false);
+    setIsMenuOpen(false);
   }, [pathname]);
 
   useEffect(() => {
@@ -353,16 +353,23 @@ const Header = () => {
             className="flex justify-between items-center transition-all ease-in-out duration-[500ms]"
           >
             <Logo width={50} height={50} />
-            <Toggler
-              className="hidden sm:flex"
-              onChange={(val) => setToggle(val)}
-            />
+            
+            {/* Hamburger Menu Button */}
+            <button 
+              className="hidden sm:flex flex-col justify-center items-center w-8 h-8 space-y-1.5 focus:outline-none"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              aria-label="Toggle menu"
+            >
+              <span className={`w-6 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? 'transform rotate-45 translate-y-2' : ''}`}></span>
+              <span className={`w-6 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? 'opacity-0' : ''}`}></span>
+              <span className={`w-6 h-0.5 bg-white transition-all duration-300 ${isMenuOpen ? 'transform -rotate-45 -translate-y-2' : ''}`}></span>
+            </button>
 
             <ul
               className={`flex gap-x-6 sm:absolute sm:top-[115%] sm:left-[15px] sm:bg-darkgray sm:p-[25px] sm:w-[calc(100%-30px)] sm:rounded-[15px] sm:flex-col sm:gap-y-4 transition-all duration-500 ${
-                toggle
-                  ? "sm:[clip-path:polygon(0_0,100%_0,100%_100%,0_100%)]"
-                  : "sm:[clip-path:polygon(0_0,100%_0,100%_0,0_0)]"
+                isMenuOpen
+                  ? "sm:opacity-100 sm:visible sm:translate-y-0"
+                  : "sm:opacity-0 sm:invisible sm:-translate-y-4"
               }`}
             >
               <li>

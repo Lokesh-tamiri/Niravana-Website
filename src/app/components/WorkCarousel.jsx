@@ -111,28 +111,53 @@ const WorkCarousel = ({ works, accentColor }) => {
             </svg>
           </button>
 
-          <div className="flex space-x-3">
-            {works.map((_, i) => (
-              <button
-                key={i}
-                onClick={() => {
-                  clearInterval(intervalRef.current);
-                  setActiveIndex(i);
-                  intervalRef.current = setInterval(() => {
-                    setActiveIndex(
-                      (prevIndex) => (prevIndex + 1) % works.length
-                    );
-                  }, 10000);
-                }}
-                className={`w-7 h-7 flex items-center justify-center rounded-full text-xs font-medium ${
-                  i === activeIndex
-                    ? `bg-gradient-to-r from-[rgba(${accentColor},1)] to-[rgba(${accentColor},0.6)] text-white shadow-md`
-                    : "bg-white/10 text-white/70 hover:bg-white/20"
-                } transition-all duration-300`}
-              >
-                {i + 1}
-              </button>
-            ))}
+          <div className="flex flex-col gap-3">
+            <div className="grid grid-cols-5 gap-2">
+              {works.slice(0, 5).map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => {
+                    clearInterval(intervalRef.current);
+                    setActiveIndex(i);
+                    intervalRef.current = setInterval(() => {
+                      setActiveIndex(
+                        (prevIndex) => (prevIndex + 1) % works.length
+                      );
+                    }, 10000);
+                  }}
+                  className={`w-7 h-7 flex items-center justify-center rounded-full text-xs font-medium ${
+                    i === activeIndex
+                      ? `bg-gradient-to-r from-[rgba(${accentColor},1)] to-[rgba(${accentColor},0.6)] text-white shadow-md`
+                      : "bg-white/10 text-white/70 hover:bg-white/20"
+                  } transition-all duration-300`}
+                >
+                  {i + 1}
+                </button>
+              ))}
+            </div>
+            <div className="grid grid-cols-5 gap-2">
+              {works.slice(5, 10).map((_, i) => (
+                <button
+                  key={i + 5}
+                  onClick={() => {
+                    clearInterval(intervalRef.current);
+                    setActiveIndex(i + 5);
+                    intervalRef.current = setInterval(() => {
+                      setActiveIndex(
+                        (prevIndex) => (prevIndex + 1) % works.length
+                      );
+                    }, 10000);
+                  }}
+                  className={`w-7 h-7 flex items-center justify-center rounded-full text-xs font-medium ${
+                    i + 5 === activeIndex
+                      ? `bg-gradient-to-r from-[rgba(${accentColor},1)] to-[rgba(${accentColor},0.6)] text-white shadow-md`
+                      : "bg-white/10 text-white/70 hover:bg-white/20"
+                  } transition-all duration-300`}
+                >
+                  {i + 6}
+                </button>
+              ))}
+            </div>
           </div>
 
           <button

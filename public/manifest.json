@@ -1,0 +1,29 @@
+{
+    "name": "Niravana Web Innovation",
+    "short_name": "Niravana",
+    "description": "Leading web development and digital innovation agency",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#261362",
+    "theme_color": "#261362",
+    "orientation": "portrait-primary",
+    "icons": [
+        {
+            "src": "/favicon.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/favicon.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "categories": [
+        "business",
+        "technology",
+        "productivity"
+    ],
+    "lang": "en",
+    "dir": "ltr"
+}

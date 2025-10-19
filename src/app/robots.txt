@@ -1,8 +1,22 @@
 User-agent: *
 Allow: /
 
-# Optionally disallow certain routes you don't want crawled:
-# Disallow: /api/
-# Disallow: /private/
+# Disallow admin and internal directories
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /api/
+Disallow: /.well-known/
 
+# Allow search engines to access images
+Allow: /assets/
+Allow: /public/
+
+# Sitemap location
 Sitemap: https://www.niravana.in/sitemap.xml
+
+# Crawl-delay for specific bots (optional)
+User-agent: Bingbot
+Crawl-delay: 1
+
+User-agent: Googlebot
+Allow: /

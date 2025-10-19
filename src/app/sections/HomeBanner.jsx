@@ -3,6 +3,7 @@ import MagneticButton from "../components/MagneticButton";
 import Image from "next/image";
 import Link from "next/link";
 import Bubble from "../components/Bubble";
+import Orb from "../../components/Orb";
 
 const HomeBanner = () => {
   return (
@@ -26,7 +27,14 @@ const HomeBanner = () => {
             "--bubble-bg": "linear-gradient(#261362, #F900B7)",
           }}
         />
-        <div className="row justify-center relative z-0 mx-0 w-full">
+        {/* Orb background */}
+        <div className="absolute inset-0 flex items-center justify-center z-0 opacity-60">
+          <div className="w-[800px] h-[800px] xl:w-[600px] xl:h-[600px] lg:w-[500px] lg:h-[500px] sm:w-[400px] sm:h-[400px]">
+            <Orb hue={270} hoverIntensity={0.3} rotateOnHover={true} />
+          </div>
+        </div>
+
+        <div className="row justify-center relative z-10 mx-0 w-full">
           <div className="col-xl-6 col-lg-8">
             <div className="text-center relative">
               <h1 className="heading-2 font-bold text-white mb-[50px] w-[82%] mx-auto xl:w-full xl:text-[50px] xl:leading-[60px] sm:text-[40px] sm:mb-[30px]">
@@ -42,45 +50,6 @@ const HomeBanner = () => {
               </MagneticButton>
             </div>
           </div>
-        </div>
-        <div className="absolute text-center z-[1] top-1/2 -translate-y-1/2 left-[15%] xl:left-[10%] lg:hidden">
-          <MagneticButton buttonClass="bg-[#ffdb1e] mb-[10px] overflow-hidden rounded-[114px]">
-            <Image
-              width={150}
-              height={225}
-              className="h-[auto]"
-              src="/assets/img/lokeshprofile.png"
-              alt="Lokesh T."
-            />
-          </MagneticButton>
-          <h4 className="text-white font-poppins -mb-[5px]">Lokesh T.</h4>
-          <span className="font-poppins text-white">Founder</span>
-        </div>
-        <div className="absolute text-center z-[1] bottom-[50px] right-[25%] xl:right-[20%] lg:hidden">
-          <MagneticButton buttonClass="bg-[#6e5aef] mb-[10px] overflow-hidden rounded-full py-[15px] px-[15px]">
-            <Image
-              width={433}
-              height={577}
-              className="w-[150px] h-[auto] inline-flex"
-              src="/assets/img/omkarprofile.png"
-              alt="Omkar B."
-            />
-          </MagneticButton>
-          <h4 className="text-white font-poppins -mb-[5px]">Omkar B.</h4>
-          <span className="font-poppins text-white">MERN</span>
-        </div>
-        <div className="absolute text-center z-[1] top-[150px] right-[13%] xl:right-[10%] lg:hidden">
-          <MagneticButton buttonClass="bg-[#ff83af] mb-[10px] overflow-hidden rounded-full py-[15px]">
-            <Image
-              width={150}
-              height={150}
-              className="inline-flex"
-              src="/assets/img/harikaprofile.png"
-              alt="Harika T."
-            />
-          </MagneticButton>
-          <h4 className="text-white font-poppins -mb-[5px]">Harika T.</h4>
-          <span className="font-poppins text-white">Branding and UX</span>
         </div>
       </section>
     </>

@@ -1,48 +1,77 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Autoplay } from 'swiper/modules';
+import { Autoplay } from "swiper/modules";
 
 // style
-import 'swiper/css';
+import "swiper/css";
 
 const TeamData = [
   {
     img: "/assets/img/lokeshprofile.png",
-    name: "Lokesh T.",
-    designation: "Founder & CEO",
+    name: "Lokesh Sai Tamiri",
+    designation: "Founder & Director",
   },
   {
     img: "/assets/img/omkarprofile.png",
-    name: "Omkar B.",
-    designation: "MERN",
+    name: "Omkar Bolisetti",
+    designation: "Web Development",
   },
   {
     img: "/assets/img/harikaprofile.png",
-    name: "Harika T.",
+    name: "Harika Tammina",
     designation: "Branding & UX",
+  },
+  {
+    img: "/assets/img/harikaprofile.png",
+    name: "Saran Jasty",
+    designation: "Mobile App Development",
+  },
+  {
+    img: "/assets/img/harikaprofile.png",
+    name: "Sheshadri Chamarty",
+    designation: "AI/ML Specialist",
+  },
+  {
+    img: "/assets/img/harikaprofile.png",
+    name: "Prudhvi Balusu",
+    designation: "Branding & UX",
+  },
+  {
+    img: "/assets/img/harikaprofile.png",
+    name: "Gafoor Shaik",
+    designation: "Digital Marketing",
+  },
+  {
+    img: "/assets/img/harikaprofile.png",
+    name: "Vasanthi Tapa",
+    designation: "Frontend Developer",
+  },
+  {
+    img: "/assets/img/harikaprofile.png",
+    name: "Chaitanya Eggigani",
+    designation: "Tester & QA",
   },
 ];
 
 const AboutOurTeam = () => {
-
-  const [isMobile, setIsMobile] = useState(false)
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     const isMobile = window.matchMedia("(max-width: 767px)");
     if (isMobile.matches) {
-      setIsMobile(true)
+      setIsMobile(true);
     }
 
     window.matchMedia("(max-width: 767px)").onchange = (e) => {
       if (e.matches) {
-        setIsMobile(true)
+        setIsMobile(true);
       } else {
-        setIsMobile(false)
+        setIsMobile(false);
       }
-    }
-  }, [])
+    };
+  }, []);
 
   return (
     <section>
@@ -50,41 +79,42 @@ const AboutOurTeam = () => {
         <div className="row justify-center mb-[90px]">
           <div className="col-xl-6 col-lg-8 col-md-10 text-center">
             <h2 className="mb-[30px] text-white font-semibold">Our Team</h2>
-            <p> Our team is dedicated to creating a website or app that best represents your brand, boosts online presence & drives sales growth</p>
+            <p>
+              {" "}
+              Our team is dedicated to creating a website or app that best
+              represents your brand, boosts online presence & drives sales
+              growth
+            </p>
           </div>
         </div>
 
-        {
-          isMobile ? (
-            <Swiper
-              modules={[Autoplay]}
-              slidesPerView={1}
-              spaceBetween={50}
-              autoplay={{ disableOnInteraction: true, delay: 2000 }}
-              breakpoints={{
-                768: {
-                  autoplay: false
-                }
-              }}
-            >
-              {TeamData?.map((item, i) => {
-                return (
-                  <SwiperSlide key={i} className="flex">
-                    <Team item={item} />
-                  </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          ) : (
-            <div className="row justify-center gap-y-[30px]">
-              {TeamData?.map((item, i) => {
-                return (
-                  <Team key={i} item={item} />
-                )
-              })}
-            </div>
-          )
-        }
+        {isMobile ? (
+          <Swiper
+            modules={[Autoplay]}
+            slidesPerView={1}
+            spaceBetween={50}
+            autoplay={{ disableOnInteraction: true, delay: 2000 }}
+            breakpoints={{
+              768: {
+                autoplay: false,
+              },
+            }}
+          >
+            {TeamData?.map((item, i) => {
+              return (
+                <SwiperSlide key={i} className="flex">
+                  <Team item={item} />
+                </SwiperSlide>
+              );
+            })}
+          </Swiper>
+        ) : (
+          <div className="row justify-center gap-y-[30px]">
+            {TeamData?.map((item, i) => {
+              return <Team key={i} item={item} />;
+            })}
+          </div>
+        )}
       </div>
     </section>
   );
@@ -96,23 +126,15 @@ const Team = ({ item }) => {
   return (
     <div className="col-xl-3 col-lg-4 col-md-6 col-sm-9 col-12 sm:mx-auto">
       <div className="text-center h-full">
-        <div className="relative mb-[25px] bg-darkgray w-full h-full rounded-[25px] flex items-center px-[15px] py-[15px]">
-        <div className="img-wrapper mr-[15px] bg-[#383838] relative rounded-[25px] w-[100px] h-[100px] overflow-hidden">
-    <Image 
-        src={item.img} 
-        alt={item.name} 
-        fill 
-        sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        className="object-contain"
-    />
-</div>
-
-          <div className="text-left">
-            <h3 className="text-[20px] leading-none text-white font-medium">{item.name}</h3>
-            <p>{item.designation}</p>
+        <div className=" mb-[25px] bg-darkgray w-full h-full rounded-[25px] flex gap-3 justify-center items-center px-[15px] py-[15px]">
+          <div className="text-center">
+            <h3 className="text-[20px] leading-none text-white font-medium">
+              {item.name}
+            </h3>
+            <p className="text-center">{item.designation}</p>
           </div>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};

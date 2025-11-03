@@ -14,17 +14,54 @@ const WebExpertise = () => {
 
   const webWorks = [
     {
-      title: "Wyra - B2B Platform",
-      slug: "wyra",
+      title: "Cittasya",
+      slug: "cittasya",
+      description: "Empowering Businesses with Innovative Solutions",
+      image: "/assets/img/cittasya.webp",
+      url: "https://www.cittasya.com/",
+      metrics: ["100% Responsive", "100% SEO Optimized", "100% User Friendly"],
+    },
+
+    {
+      title: "Aster",
+      slug: "aster",
+      description: "Transforming Businesses with AI & GCP",
+      image: "/assets/img/aster inc.webp",
+      url: "https://www.asteritinc.com/",
+      metrics: ["100% Responsive", "100% SEO Optimized", "100% User Friendly"],
+    },
+    {
+      title: "BrightSourceInc",
+      slug: "brightsourceinc",
+      description: "Empowering Your Business with Radiant Solutions",
+      image: "/assets/img/bright-source.webp",
+      url: "https://brightsourceinc.com/",
+      metrics: ["100% Responsive", "100% SEO Optimized", "100% User Friendly"],
+    },
+    {
+      title: "ValourUSA",
+      slug: "valourusa",
       description:
-        "Redesigned Wyra's frontend with a modern UI and optimized API connectivity for faster data retrieval",
-      image: "/assets/img/wyra.webp",
-      url: "https://wyra.ai/",
-      metrics: [
-        "60% Faster Load Time",
-        "45% Conversion Increase",
-        "100k+ Monthly Users",
-      ],
+        "Delivering innovative enterprise solutions with strategic expertise in SAP, Cloud Computing, and Artificial Intelligence.",
+      image: "/assets/img/valourUSA.webp",
+      url: "https://www.valourusa.com/",
+      metrics: ["100% Responsive", "100% SEO Optimized", "100% User Friendly"],
+    },
+    {
+      title: "Talent Craft",
+      slug: "talentcraft",
+      description: "Transforming Businesses with SAP, AI & GCP",
+      image: "/assets/img/talentcraft.webp",
+      url: "https://www.talentcraftit.com/",
+      metrics: ["100% Responsive", "100% SEO Optimized", "100% User Friendly"],
+    },
+    {
+      title: "Glaze- Tech",
+      slug: "glaze-tech",
+      description: "Transforming Enterprises with Cloud & AI",
+      image: "/assets/img/glaze tech.webp",
+      url: "https://www.glazetechinc.com/",
+      metrics: ["100% Responsive", "100% SEO Optimized", "100% User Friendly"],
     },
     {
       title: "AxisB - Corporate Site",
@@ -48,72 +85,6 @@ const WebExpertise = () => {
       url: "https://heartcare4life.com/",
       metrics: ["99.9% Uptime", "15k+ Monthly Bookings", "HIPAA Compliant"],
     },
-    {
-      title: "Aster",
-      slug: "aster",
-      description:
-        "Transforming Businesses with AI & GCP",
-      image: "/assets/img/aster inc.webp",
-      url: "https://www.asteritinc.com/",
-      metrics: ["100% Responsive", "100% SEO Optimized", "100% User Friendly"],
-    },
-    {
-      title: "BrightSourceInc",
-      slug: "brightsourceinc",
-      description:
-        "Empowering Your Business with Radiant Solutions",
-      image: "/assets/img/bright-source.webp",
-      url: "https://brightsourceinc.com/",
-      metrics: ["100% Responsive", "100% SEO Optimized", "100% User Friendly"],
-    },
-    {
-      title: "ValourUSA",
-      slug: "valourusa",
-      description:
-        "Delivering innovative enterprise solutions with strategic expertise in SAP, Cloud Computing, and Artificial Intelligence.",
-      image: "/assets/img/valourUSA.webp",
-      url: "https://www.valourusa.com/",
-      metrics: ["100% Responsive", "100% SEO Optimized", "100% User Friendly"],
-    },
-    {
-        title: "Talent Craft",
-        slug: "talentcraft",
-        description:
-        "Transforming Businesses with SAP, AI & GCP",
-      image: "/assets/img/talentcraft.webp",
-      url: "https://www.talentcraftit.com/",
-      metrics: ["100% Responsive", "100% SEO Optimized", "100% User Friendly"],
-    },
-    {
-      title: "S-FORCE",
-      slug: "s-force",
-      description:
-        "Secure Your Digital Future with S-FORCE",
-      image: "/assets/img/s-force.webp",
-      url: "https://sforcecorp.vercel.app/",
-      metrics: ["100% Responsive", "100% SEO Optimized", "100% User Friendly"],
-    },
-    {
-      title: "Glaze- Tech",
-      slug: "glaze-tech",
-      description:
-        "Transforming Enterprises with Cloud & AI",
-      image: "/assets/img/glaze tech.webp",
-      url: "https://www.glazetechinc.com/",
-      metrics: ["100% Responsive", "100% SEO Optimized", "100% User Friendly"],
-    },
-    {
-      title: "SkillBridge",
-      slug: "skillbridge",
-      description:
-        "Bridge Your Skills to the Future",
-      image: "/assets/img/skillbridge.webp",
-      url: "https://skillbridge-lake.vercel.app/",
-      metrics: ["100% Responsive", "100% SEO Optimized", "100% User Friendly"],
-    },
-    
-    
-    
   ];
 
   return (

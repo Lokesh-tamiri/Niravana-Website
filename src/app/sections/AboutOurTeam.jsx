@@ -50,6 +50,11 @@ const TeamData = [
   },
   {
     img: "/assets/img/harikaprofile.png",
+    name: "Praneeth Gullapudi",
+    designation: "Tester & QA",
+  },
+  {
+    img: "/assets/img/harikaprofile.png",
     name: "Chaitanya Eggigani",
     designation: "Tester & QA",
   },

@@ -70,11 +70,7 @@ const WebExpertise = () => {
         "Built a responsive, SEO-optimized corporate website with interactive elements and integrated CMS",
       image: "/assets/img/axisb.webp",
       url: "https://www.axisbinc.com/",
-      metrics: [
-        "Top 3 SERP Rankings",
-        "85% Mobile Traffic",
-        "2.5x Lead Generation",
-      ],
+      metrics: ["Top 3 SERP Rankings", "2.5x Lead Generation"],
     },
     {
       title: "Heartcare4life",
@@ -83,7 +79,7 @@ const WebExpertise = () => {
         "Created a medical appointment system with secure patient portal and integrated payment gateway",
       image: "/assets/img/heartcare4life.webp",
       url: "https://heartcare4life.com/",
-      metrics: ["99.9% Uptime", "15k+ Monthly Bookings", "HIPAA Compliant"],
+      metrics: ["99.9% Uptime", "200+ Monthly Bookings", "HIPAA Compliant"],
     },
   ];
 

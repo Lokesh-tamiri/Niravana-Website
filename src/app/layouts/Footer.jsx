@@ -36,12 +36,15 @@ const Footer = () => {
               height={70}
             />
             <p>© {new Date().getFullYear()} Niravana. All rights reserved.</p>
-            <div className="grid grid-cols-2 underline">
+            <div className="grid grid-cols-2 gap-2 underline">
               <Link href={"/privacy"} className="hover:text-white">
                 Privacy Policy
               </Link>
               <Link href={"/terms"} className="hover:text-white">
                 Terms And Condition
+              </Link>
+              <Link href={"/shipping-delivery"} className="hover:text-white">
+                Shipping & Delivery
               </Link>
             </div>
           </div>

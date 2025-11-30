@@ -272,3 +272,4 @@ const ShippingAndDelivery = () => {
 
 export default ShippingAndDelivery;
 
+

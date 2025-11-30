@@ -46,6 +46,9 @@ const Footer = () => {
               <Link href={"/shipping-delivery"} className="hover:text-white">
                 Shipping & Delivery
               </Link>
+              <Link href={"/cancellation-refund"} className="hover:text-white">
+                Cancellation & Refund
+              </Link>
             </div>
           </div>
           <div className="col-lg-2 col-md-6 offset-xl-2">
